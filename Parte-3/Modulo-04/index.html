@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <script src="js/gallery.js" defer></script>
+</head>
+<body onload="addTabIndex()">
+
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
+
+  <div class="gallery">
+    <img class="preview" alt="Charizard, a fire and flying type pokémon" src="images/Charizard.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" alt="Dragonite, a friendly dragon type pokémon" src="images/Dragonite.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" alt="Gyarados, a water and flying pokémon" src="images/Gyarados.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" alt="Jolteon, an electric pokémon" src="images/Jolteon.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" alt="Nidoking, a poison and ground pokémon" src="images/Nidoking.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" alt="Primeape, a furious fighting pokémon" src="images/Primeape.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+  </div>
+
+</body>
+</html>
