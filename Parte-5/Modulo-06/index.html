@@ -10,76 +10,138 @@
 <body>
   <a href="#main" class="skip-link">Skip to Main Content</a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="charizard.html">Charizard</a></li>
-      <li><a href="nidoking.html">Nidoking</a></li>
-      <li><a href="primeape.html">Primeape</a></li>
-      <li><a href="gyarados.html">Gyarados</a></li>
-      <li><a href="jolteon.html">Jolteon</a></li>
-      <li><a href="dragonite.html">Dragonite</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <div class="menu-principal">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="charizard.html">Charizard</a></li>
+          <li><a href="nidoking.html">Nidoking</a></li>
+          <li><a href="primeape.html">Primeape</a></li>
+          <li><a href="gyarados.html">Gyarados</a></li>
+          <li><a href="jolteon.html">Jolteon</a></li>
+          <li><a href="dragonite.html">Dragonite</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-hamburguer">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </label>
+  
+      <div class="overlay">
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charizard.html">Charizard</a></li>
+            <li><a href="nidoking.html">Nidoking</a></li>
+            <li><a href="primeape.html">Primeape</a></li>
+            <li><a href="gyarados.html">Gyarados</a></li>
+            <li><a href="jolteon.html">Jolteon</a></li>
+            <li><a href="dragonite.html">Dragonite</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <main id="main">
+
+    <img class="pokemon-logo" src="images/pokemon-logo-0.png" alt="pokemon logo" />
+
     <h1>My Favorite Pokémon Team</h1>
-    <p>This is my favorite team to challenge the Elite Four in Pokémon Fire Red!</p>
+    <p class="pokemon-card">This is not just a team — it’s the result of countless hours of training, battles, and unforgettable adventures in Pokémon Fire Red. I started my journey with a single choice: my loyal Charizard, who has been with me since the very first battle. Along the way, I met Nidoking, a powerhouse capable of adapting to almost any opponent. Primeape joined the team during a tough stretch, bringing unmatched fighting spirit and the will to never back down. Gyarados emerged from humble beginnings as a Magikarp, proving that determination turns weakness into strength. Jolteon brought speed and precision, striking before the enemy even had a chance to react. Finally, Dragonite became my ultimate guardian — a gentle giant with the power to turn the tide in the most desperate moments. Together, they’re more than just my favorite Pokémon — they’re the companions who carried me to victory against the Elite Four, and the reason I’ll always remember this journey as my greatest Pokémon adventure.</p>
 
     <ul class="team-grid">
         <li>
         <a href="charizard.html" class="pokemon-card">
-            <img src="images/Charizard.png" alt="Charizard, a fire and flying type Pokémon, breathing flames" />
+            <img class="img-pokemon" src="images/Charizard.png" alt="Charizard, a fire and flying type Pokémon, breathing flames" />
+            <p class="pokemon-number">Nº 0006</p>
             <h2>Charizard</h2>
             <p class="subtitle">The fire-breathing finisher</p>
+            <div class="pokemon-types">
+              <span class="type fogo">Fogo</span>
+              <span class="type flying">Flying</span>
+            </div>
         </a>
         </li>
 
         <li>
         <a href="nidoking.html" class="pokemon-card">
-            <img src="images/Nidoking.png" alt="Nidoking, a powerful poison and ground type Pokémon, standing strong" />
+            <img class="img-pokemon" src="images/Nidoking.png" alt="Nidoking, a powerful poison and ground type Pokémon, standing strong" />
+            <p class="pokemon-number">Nº 0034</p>
             <h2>Nidoking</h2>
             <p class="subtitle">The all-around powerhouse</p>
+            <div class="pokemon-types">
+              <span class="type poison">Poison</span>
+              <span class="type ground">Ground</span>
+            </div>
         </a>
         </li>
 
         <li>
         <a href="primeape.html" class="pokemon-card">
-            <img src="images/Primeape.png" alt="Primeape, a fighting type Pokémon, ready to strike with rage" />
+            <img class="img-pokemon" src="images/Primeape.png" alt="Primeape, a fighting type Pokémon, ready to strike with rage" />
+            <p class="pokemon-number">Nº 0057</p>
             <h2>Primeape</h2>
             <p class="subtitle">The furious striker</p>
+            <div class="pokemon-types">
+              <span class="type fighting">Fighting</span>
+            </div>
         </a>
         </li>
 
         <li>
         <a href="gyarados.html" class="pokemon-card">
-            <img src="images/Gyarados.png" alt="Gyarados, a water and flying type Pokémon, soaring fiercely" />
+            <img class="img-pokemon" src="images/Gyarados.png" alt="Gyarados, a water and flying type Pokémon, soaring fiercely" />
+            <p class="pokemon-number">Nº 0130</p>
             <h2>Gyarados</h2>
             <p class="subtitle">The sea dragon of destruction</p>
+            <div class="pokemon-types">
+              <span class="type water">Water</span>
+              <span class="type flying">Flying</span>
+            </div>
         </a>
         </li>
 
         <li>
         <a href="jolteon.html" class="pokemon-card">
-            <img src="images/Jolteon.png" alt="Jolteon, an electric type Pokémon, charged with electricity" />
+            <img class="img-pokemon" src="images/Jolteon.png" alt="Jolteon, an electric type Pokémon, charged with electricity" />
+            <p class="pokemon-number">Nº 0135</p>
             <h2>Jolteon</h2>
             <p class="subtitle">The lightning-fast attacker</p>
+            <div class="pokemon-types">
+              <span class="type electric">Electric</span>
+            </div>
         </a>
         </li>
 
         <li>
         <a href="dragonite.html" class="pokemon-card">
-            <img src="images/Dragonite.png" alt="Dragonite, a dragon and flying type Pokémon, looking friendly but powerful" />
+            <img class="img-pokemon" src="images/Dragonite.png" alt="Dragonite, a dragon and flying type Pokémon, looking friendly but powerful" />
+            <p class="pokemon-number">Nº 0148</p>
             <h2>Dragonite</h2>
-            <p class="subtitle">The kind-hearted dragon with massive power</p>
+            <p class="subtitle">Gentle dragon, immense power</p>
+            <div class="pokemon-types">
+              <span class="type dragon">Dragon</span>
+              <span class="type flying">Flying</span>
+            </div>
         </a>
         </li>
     </ul>
 
-    <p>
-      Want to build your own favorite team? Visit the
-      <a href="https://www.pokemon.com/br/pokedex" target="_blank" rel="noopener noreferrer">Pokédex</a>!
-    </p>
   </main>
 </body>
+
+<footer>
+  <p style="color: white;">
+    Want to build your own favorite team? Visit the
+    <a style="color: #2a75bb;" href="https://www.pokemon.com/br/pokedex" target="_blank" rel="noopener noreferrer"><strong>Pokédex</strong></a>!
+  </p>
+</footer>
+
 </html>
