@@ -10,41 +10,78 @@
 <body>
   <a href="#main" class="skip-link">Skip to Main Content</a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="charizard.html">Charizard</a></li>
-      <li><a href="nidoking.html">Nidoking</a></li>
-      <li><a href="primeape.html">Primeape</a></li>
-      <li><a href="gyarados.html">Gyarados</a></li>
-      <li><a href="jolteon.html">Jolteon</a></li>
-      <li><a href="dragonite.html">Dragonite</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <div class="menu-principal">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="charizard.html">Charizard</a></li>
+          <li><a href="nidoking.html">Nidoking</a></li>
+          <li><a href="primeape.html">Primeape</a></li>
+          <li><a href="gyarados.html">Gyarados</a></li>
+          <li><a href="jolteon.html">Jolteon</a></li>
+          <li><a href="dragonite.html">Dragonite</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-hamburguer">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </label>
+  
+      <div class="overlay">
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charizard.html">Charizard</a></li>
+            <li><a href="nidoking.html">Nidoking</a></li>
+            <li><a href="primeape.html">Primeape</a></li>
+            <li><a href="gyarados.html">Gyarados</a></li>
+            <li><a href="jolteon.html">Jolteon</a></li>
+            <li><a href="dragonite.html">Dragonite</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <main id="main">
     <h1>Nidoking</h1>
-    <figure>
-      <img src="images/Nidoking.png" alt="Nidoking, a powerful poison and ground type Pokémon, standing strong" />
-      <figcaption>Nidoking - The all-around powerhouse</figcaption>
-    </figure>
-
-    <section>
-      <h2>About Nidoking</h2>
-      <p>
-        Nidoking is a dual-type Poison/Ground Pokémon known for its strength, versatility, and intimidating horn.
-        With access to a wide variety of moves like Earthquake, Thunderbolt, Ice Beam, and Megahorn, Nidoking is 
-        a strategic powerhouse in battle.
-      </p>
-    </section>
-
-    <section>
-      <h2>Why He's on My Team</h2>
-      <p>
-        Nidoking’s ability to counter many types makes him invaluable against the Elite Four. His strength lies 
-        not only in his stats, but also in the unpredictability of his moveset.
-      </p>
-    </section>
+    <div class="pokemon-card-horizontal">
+      <div class="pokemon-info-left">
+        <figure>
+          <img class="img-pokemon" src="images/Nidoking.png" alt="Nidoking, a powerful poison and ground type Pokémon, standing strong" />
+          <figcaption>Nidoking - The all-around powerhouse</figcaption>
+        </figure>
+      </div>
+      <div class="pokemon-info-right">
+        <section>
+          <h2>About Nidoking</h2>
+          <p>
+            Nidoking is a dual-type Poison/Ground Pokémon known for its strength, versatility, and intimidating horn.
+            With access to a wide variety of moves like Earthquake, Thunderbolt, Ice Beam, and Megahorn, Nidoking is 
+            a strategic powerhouse in battle.
+          </p>
+        </section>
+        <section>
+          <h2>Why He's on My Team</h2>
+          <p>
+            Nidoking’s ability to counter many types makes him invaluable against the Elite Four. His strength lies 
+            not only in his stats, but also in the unpredictability of his moveset.
+          </p>
+        </section>
+      </div>
+    </div>
   </main>
+  <footer>
+    <p style="color: white;">
+      Want to build your own favorite team? Visit the
+      <a style="color: #2a75bb;" href="https://www.pokemon.com/br/pokedex" target="_blank" rel="noopener noreferrer"><strong>Pokédex</strong></a>!
+    </p>
+  </footer>
 </body>
 </html>

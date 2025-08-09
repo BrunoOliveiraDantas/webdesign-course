@@ -10,40 +10,77 @@
 <body>
   <a href="#main" class="skip-link">Skip to Main Content</a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="charizard.html">Charizard</a></li>
-      <li><a href="nidoking.html">Nidoking</a></li>
-      <li><a href="primeape.html">Primeape</a></li>
-      <li><a href="gyarados.html">Gyarados</a></li>
-      <li><a href="jolteon.html">Jolteon</a></li>
-      <li><a href="dragonite.html">Dragonite</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <div class="menu-principal">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="charizard.html">Charizard</a></li>
+          <li><a href="nidoking.html">Nidoking</a></li>
+          <li><a href="primeape.html">Primeape</a></li>
+          <li><a href="gyarados.html">Gyarados</a></li>
+          <li><a href="jolteon.html">Jolteon</a></li>
+          <li><a href="dragonite.html">Dragonite</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-hamburguer">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </label>
+  
+      <div class="overlay">
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charizard.html">Charizard</a></li>
+            <li><a href="nidoking.html">Nidoking</a></li>
+            <li><a href="primeape.html">Primeape</a></li>
+            <li><a href="gyarados.html">Gyarados</a></li>
+            <li><a href="jolteon.html">Jolteon</a></li>
+            <li><a href="dragonite.html">Dragonite</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <main id="main">
     <h1>Jolteon</h1>
-    <figure>
-      <img src="images/Jolteon.png" alt="Jolteon, an electric type Pokémon, charged with electricity" />
-      <figcaption>Jolteon - The lightning-fast attacker</figcaption>
-    </figure>
-
-    <section>
-      <h2>About Jolteon</h2>
-      <p>
-        Jolteon is an Electric-type Pokémon, known for its incredible speed and special attack.
-        It can use moves like Thunderbolt, Shadow Ball, and Double Kick to keep enemies off guard.
-      </p>
-    </section>
-
-    <section>
-      <h2>Why He's on My Team</h2>
-      <p>
-        Jolteon is the perfect counter to Water and Flying types. With amazing speed and powerful electric attacks,
-        he often strikes first — and last.
-      </p>
-    </section>
+    <div class="pokemon-card-horizontal">
+      <div class="pokemon-info-left">
+        <figure>
+          <img class="img-pokemon" src="images/Jolteon.png" alt="Jolteon, an electric type Pokémon, charged with electricity" />
+          <figcaption>Jolteon - The lightning-fast attacker</figcaption>
+        </figure>
+      </div>
+      <div class="pokemon-info-right">
+        <section>
+          <h2>About Jolteon</h2>
+          <p>
+            Jolteon is an Electric-type Pokémon, known for its incredible speed and special attack.
+            It can use moves like Thunderbolt, Shadow Ball, and Double Kick to keep enemies off guard.
+          </p>
+        </section>
+        <section>
+          <h2>Why He's on My Team</h2>
+          <p>
+            Jolteon is the perfect counter to Water and Flying types. With amazing speed and powerful electric attacks,
+            he often strikes first — and last.
+          </p>
+        </section>
+      </div>
+    </div>
   </main>
+  <footer>
+    <p style="color: white;">
+      Want to build your own favorite team? Visit the
+      <a style="color: #2a75bb;" href="https://www.pokemon.com/br/pokedex" target="_blank" rel="noopener noreferrer"><strong>Pokédex</strong></a>!
+    </p>
+  </footer>
 </body>
 </html>
